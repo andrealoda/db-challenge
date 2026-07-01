@@ -1,5 +1,26 @@
 {
+  "name": "db-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/andrealoda/db-challenge#readme",
+  "bugs": {
+    "url": "https://github.com/andrealoda/db-challenge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrealoda/db-challenge.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --env-file=.env --watch server.js"
+  },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mysql2": "^3.22.5"
   }
 }
