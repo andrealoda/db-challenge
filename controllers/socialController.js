@@ -30,7 +30,17 @@ const socialController = {
             if (err) throw err;
             res.send(results);
         });
+    },
+
+    getPostDetails: (req, res) => {
+        const postId = req.params.id;
+        const query = 'SELECT * FROM posts WHERE id = ?';
+        connection.query(query, [postId], (err, results) => {
+            if (err) throw err;
+            res.send(results);
+        });
     }
+
 };
 
 

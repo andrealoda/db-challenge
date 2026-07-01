@@ -11,4 +11,6 @@ router.get('/users/:id', socialController.getUserDetails);
 
 router.get('/posts', socialController.getAllPosts);
 
+router.get('/posts/:id', socialController.getPostDetails); // Aggiunta della rotta per ottenere i dettagli di un post specifico 
+
 module.exports = router;
